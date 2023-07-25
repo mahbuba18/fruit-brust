@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/185fc1c311.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'back-color':'#F85559',
+                'foot-color':'#121212',
               }
             }
           }
@@ -28,11 +31,87 @@
 </head>
 <body>
     <!--header section-->
-    <header></header>
+    <header class="md:container md:mx-auto lg:px-24">
+        <nav class="">
+            <div class="navbar bg-base-100 text-color1">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="px-2"><a>Home</a></li>
+                            <li class="px-2"><a>Service</a></li>
+                            <li class="px-2"><a>Cases</a></li>
+                            <li class="px-2"><a>Blog</a></li>
+                            <li class="px-2"><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class=" hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="px-2 text-xl"><a>Home</a></li>
+                        <li class="px-2 text-xl"><a>Service</a></li>
+                        <li class="px-2 text-xl"><a>Cases</a></li>
+                        <li class="px-2 text-xl"><a>Blog</a></li>
+                        <li class="px-2 text-xl"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                
+                   <img class="w-12" src="images/logo.png" alt="">
+                    <p class=" text-4xl font-bold">Justice</p>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex gap-2 flex-row"> 
+                        <input type="text" placeholder="Search your services " class="input input-bordered w-full max-w-xs" />
+                        <button class="btn border-bg-color bg-bg-color text-white">Search</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner section -->
+        <section>
+        </section>
+    </header>
     <!--main section-->
-    <main></main>
+    <main class="md:container md:mx-auto lg:px-24">
+
+    </main>
     <!--footer section-->
-    <footer></footer>
+    <footer class="footer footer-center p-10 bg-foot-color text-primary-content">
+        <div class="flex">
+          
+            <img class="w-12" src="images/logo.png" alt="">
+            <p class=" text-4xl font-bold text-white">Justice</p>
+        </div> 
+        <div>
+            <div class="grid grid-flow-col p-4 lg:gap-4 text-white text-lg font-medium lg:font-semibold">
+              <p>Home</p>
+              <p>About Us</p>
+              <p>shop</p>
+              <p>All Fruits</p>
+              <p>Support</p>
+              <p>My Account</p>
+
+            </div>
+          <div class="grid grid-flow-col gap-4 text-white text-2xl lg:text-4xl ">
+            <span><i class="fa-brands fa-twitter " ></i></span>
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-youtube"></i></span>
+            <span><i class="fa-brands fa-linkedin-in"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-apple"></i></span>
+            
+          </div>
+        </div>
+      </footer>
 
     
 </body>
