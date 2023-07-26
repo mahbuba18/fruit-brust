@@ -34,8 +34,8 @@
     <!--header section-->
     <header class="md:container md:mx-auto lg:px-24">
         <nav class="">
-            <div class="navbar bg-back-color rounded-full ">
-                <div class="navbar-start">
+            <div class="navbar lg:bg-back-color rounded-full ">
+                <div class="navbar-end lg:hidden ">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -55,7 +55,7 @@
                     </div>
                     
                 </div>
-                <div class="navbar-center hidden lg:flex text-white">
+                <div class="navbar-start hidden lg:flex text-white">
                     <ul class="menu menu-horizontal px-1">
                         <li class="px-2"><a>Home</a></li>
                         <li class="px-2"><a>About Us</a></li>
@@ -63,12 +63,12 @@
                         <li class="px-2"><a>All Fruits</a></li>
                     </ul>
                 </div>
-                <div class="navbar-center">
+                <div class="sm:px-10 lg:navbar-center ">
                 
                    <img class="w-12" src="images/logo.png" alt="">
-                    <p class=" text-4xl font-bold text-white">Justice</p>
+                    <p class=" text-4xl font-bold lg:text-white">Justice</p>
                 </div>
-                <div class="navbar-end">
+                <div class=" hidden lg:grid px-20">
                     <div class="flex gap-0 flex-row"> 
                         <input type="text" placeholder="Search here " class="input input-bordered w-full max-w-xs rounded-full" />
                         
@@ -170,11 +170,11 @@
          <!--Deal of the day section-->
         <section class="my-20 space-y-6">
             <!--title section-->
-            <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="flex flex-col md:flex-col lg:flex-row justify-between items-center">
                 <!--text-->
-                <div class="mx-auto">
-                  <h2 class="text-5xl font-extrabold pb-[24px] ">Deal of the day</h2>
-                  <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="mx-auto  ">
+                  <h2 class="text-5xl font-extrabold pb-5 lg:pb-[24px]  ">Deal of the day</h2>
+                  <p class="sm:pt-5 md:justify-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <!--time-->
                 <div>
@@ -212,7 +212,7 @@
                   <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
                        <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
                        <div class="card-body justify-center">
-                           <h2 class="text-2xl font-bold text-center">12.90$-18.85$</h2>
+                           <h2 class="text-xl md:text-xl lg:text-2xl font-bold text-center md:items-center">12.90$-18.85$</h2>
                            <hr>
                            <p class="text-center">Apples</p>
                            <div class="rating justify-center">
@@ -284,24 +284,78 @@
         </section>
         <!--Team Section-->
         <section class="my-20 space-y-6">
-          <div class="hero min-h-screen" style="background-image: url(images/team.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content flex flex-col text-white text-center">
+          <div class="bg-cover rounded-s-lg opacity-80" style="background-image: url(images/team.png);">
+              <div class= "flex flex-col text-white text-center pt-10">
                 <h1 class="mb-5 text-5xl font-extrabold text-white">Meet the team section</h1>
                 <p class="mb-5 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
-            </div>
-            <div class="grid grid-flow-row lg:grid-flow-col">
-              <div>
-                <img src="images/member1.png" alt="" style="height: 140px; width: 140px;">
-                <h2 class="text-2xl font-bold text-white text-center">Awlad Hossain</h2>
-                <p class="text-white text-center">Fruit Expert</p>
               </div>
-            </div>
+             <div class="grid gap-4 grid-flow-row md:grid-cols-2 lg:grid-flow-col pb-10 ">
+                   <!--1st member-->
+                   <div class="card bg-second-bg px-10">
+                    <figure class="px-6 pt-6">
+                       <img src="images/member1.png" alt="Legal" class="rounded-full h-[120px] w-[120px]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                         <h2 class="card-title text-2xl font-bold text-white ">Awlad Hossain</h2>
+                         <p class="text-white">Fruit Expert</p>
+                      <div class="grid grid-flow-col gap-4 text-white text-2xl lg:text-2xl ">
+                         <span><i class="fa-brands fa-facebook bg-back-color rounded-full p-1"></i></span>
+                         <span><i class="fa-brands fa-twitter bg-back-color rounded-full p-1" ></i></span>
+                         <span><i class="fa-brands fa-linkedin-in bg-back-color rounded-full p-1"></i></span>
+                       </div>
+                     </div>
+                 </div>
+                    <!--2nd member-->
+                    <div class="card bg-second-bg px-10">
+                      <figure class="px-6 pt-6">
+                         <img src="images/member2.png" alt="Legal" class="rounded-full h-[120px] w-[120px]" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                           <h2 class="card-title text-2xl font-bold text-white ">Safia Chowdhary</h2>
+                           <p class="text-white">Fruit Expert</p>
+                        <div class="grid grid-flow-col gap-4 text-white text-2xl lg:text-2xl ">
+                           <span><i class="fa-brands fa-facebook bg-back-color rounded-full p-1"></i></span>
+                           <span><i class="fa-brands fa-twitter bg-back-color rounded-full p-1" ></i></span>
+                           <span><i class="fa-brands fa-linkedin-in bg-back-color rounded-full p-1"></i></span>
+                         </div>
+                       </div>
+                   </div>
+                    <!--3rd member-->
+                    <div class="card bg-second-bg px-10">
+                      <figure class="px-6 pt-6">
+                         <img src="images/member3.png" alt="Legal" class="rounded-full h-[120px] w-[120px]" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                           <h2 class="card-title text-2xl font-bold text-white ">Rakib Hossain</h2>
+                           <p class="text-white">Fruit Expert</p>
+                        <div class="grid grid-flow-col gap-4 text-white text-2xl lg:text-2xl ">
+                           <span><i class="fa-brands fa-facebook bg-back-color rounded-full p-1"></i></span>
+                           <span><i class="fa-brands fa-twitter bg-back-color rounded-full p-1" ></i></span>
+                           <span><i class="fa-brands fa-linkedin-in bg-back-color rounded-full p-1"></i></span>
+                         </div>
+                       </div>
+                   </div>
+                    <!--4th member-->
+                    <div class="card bg-second-bg px-10">
+                      <figure class="px-6 pt-6">
+                         <img src="images/member4.png" alt="Legal" class="rounded-full h-[120px] w-[120px]" />
+                      </figure>
+                      <div class="card-body items-center text-center">
+                           <h2 class="card-title text-2xl font-bold text-white ">Chaity</h2>
+                           <p class="text-white">Fruit Expert</p>
+                        <div class="grid grid-flow-col gap-4 text-white text-2xl lg:text-2xl ">
+                           <span><i class="fa-brands fa-facebook bg-back-color rounded-full p-1"></i></span>
+                           <span><i class="fa-brands fa-twitter bg-back-color rounded-full p-1" ></i></span>
+                           <span><i class="fa-brands fa-linkedin-in bg-back-color rounded-full p-1"></i></span>
+                         </div>
+                       </div>
+                   </div>
+
+                </div>
              
             </div>
-          </div>
         </section>
-        <!---->
+        <!-- why section-->
         <section></section>
 
     </main>
