@@ -45,7 +45,7 @@
                             </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white">
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
                             <li class="px-2"><a>Home</a></li>
                             <li class="px-2"><a>About Us</a></li>
                             <li class="px-2"><a>Shop</a></li>
@@ -71,7 +71,7 @@
                 <div class="navbar-end">
                     <div class="flex gap-0 flex-row"> 
                         <input type="text" placeholder="Search here " class="input input-bordered w-full max-w-xs rounded-full" />
-                        <button class="btn bg-white av rounded-full"><i class="fa-thin fa-magnifying-glass"></i></i></button>
+                        
                     </div>
                 </div>
             </div>
@@ -170,48 +170,109 @@
          <!--Deal of the day section-->
         <section class="my-20 space-y-6">
             <!--title section-->
-            <div>
+            <div class="flex flex-col lg:flex-row justify-between items-center">
                 <!--text-->
-                <div></div>
+                <div class="mx-auto">
+                  <h2 class="text-5xl font-extrabold pb-[24px] ">Deal of the day</h2>
+                  <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
                 <!--time-->
-                <div></div>
+                <div>
+                  <div class="flex gap-5">
+                    <div class="">
+                      <span class="countdown font-mono text-4xl">
+                        <span style="--value:29;">:</span>:
+                      </span>
+                      days
+                    </div> 
+                    <div>
+                      <span class="countdown font-mono text-4xl">
+                        <span style="--value:15;"></span>:
+                      </span>
+                      hours
+                    </div> 
+                    <div>
+                      <span class="countdown font-mono text-4xl">
+                        <span style="--value:25;"></span>:
+                      </span>
+                      min
+                    </div> 
+                    <div>
+                      <span class="countdown font-mono text-4xl">
+                        <span style="--value:08;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+                </div>
             </div>
             <!--main section-->
             <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                <!--first car-->
+                <!--first-->
                   <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
                        <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
                        <div class="card-body justify-center">
-                           <h2 class="text-2xl font-bold">12.90$-18.85$</h2>
-                           <p class="h-[1px] w-[150px] bg-black"></p>
+                           <h2 class="text-2xl font-bold text-center">12.90$-18.85$</h2>
+                           <hr>
                            <p class="text-center">Apples</p>
+                           <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
                            <p class="text-center text-back-color text-semibold">Details</p>
                         </div>
                     </div>
-                     <!--second car-->
+                     <!--second -->
                   <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
                     <figure><img src="images/fruit7.png" alt="Shoes" /></figure>
                     <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold items-center">12.90$-18.85$</h2>
+                        <h2 class="text-2xl font-bold text-center">12.90$-18.85$</h2>
+                        <hr>
                         <p class="text-center">Orange</p>
-                         <p class="text-center text-back-color text-semibold">Details</p>
+                        <div class="rating justify-center">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <p class="text-center text-back-color text-semibold">Details</p>
                      </div>
                  </div>
-                  <!--third car-->
+                  <!--third-->
                   <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
                     <figure><img src="images/fruit8.png" alt="Shoes" /></figure>
                     <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold items-center">12.90$-18.85$</h2>
+                        <h2 class="text-2xl font-bold text-center">12.90$-18.85$</h2>
+                        <hr>
                         <p class="text-center">Dragon</p>
+                        <div class="rating justify-center">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
                          <p class="text-center text-back-color text-semibold">Details</p>
                      </div>
                    </div>
-                  <!--forth car-->
+                  <!--forth -->
                   <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl">
                     <figure><img src="images/fruit9.png" alt="Shoes" /></figure>
                     <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold items-center">12.90$-18.85$</h2>
+                        <h2 class="text-2xl font-bold text-center">12.90$-18.85$</h2>
+                        <hr>
                         <p class="text-center">Banana</p>
+                        <div class="rating justify-center">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
                          <p class="text-center text-back-color text-semibold">Details</p>
                      </div>
                     </div>
@@ -222,7 +283,24 @@
             </div>
         </section>
         <!--Team Section-->
-        <section></section>
+        <section class="my-20 space-y-6">
+          <div class="hero min-h-screen" style="background-image: url(images/team.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content flex flex-col text-white text-center">
+                <h1 class="mb-5 text-5xl font-extrabold text-white">Meet the team section</h1>
+                <p class="mb-5 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="grid grid-flow-row lg:grid-flow-col">
+              <div>
+                <img src="images/member1.png" alt="" style="height: 140px; width: 140px;">
+                <h2 class="text-2xl font-bold text-white text-center">Awlad Hossain</h2>
+                <p class="text-white text-center">Fruit Expert</p>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </section>
         <!---->
         <section></section>
 
